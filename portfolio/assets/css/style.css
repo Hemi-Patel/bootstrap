@@ -1,0 +1,152 @@
+body {
+    font-family: 'Jost';
+    
+}
+p{
+    color: #ffffffde;
+    padding-bottom: 0px;
+}
+img
+{
+    max-width: 100% !important;
+    display: block !important;
+}
+.bg-primary {
+    background-color: #80db66 !important;
+}
+
+.text-primary {
+    color: #80db66 !important;
+}
+
+.border-primary {
+    border-color: #80db66 !important;
+}
+
+.bg-color-dark {
+    background-color: #212529;
+}
+.title h2
+{
+    font-size: 60px;
+}
+/* header start  */
+.navbar-nav .nav-item {
+    font-size: 18px;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #80db66 !important;
+}
+.navbar-toggler-icon{
+    background-color: #80db66;
+}
+
+
+/* header end  */
+
+/* banner start  */
+.banner
+{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+.banner h3 {
+    font-size: 24px;
+}
+
+.banner h2 {
+    font-size: 120px;
+    line-height: 1.07;
+}
+
+
+
+/* banner end  */
+
+/* about start  */
+.about
+{
+    padding: 100px 0;
+}
+.about h2 {
+    font-size: 60px;
+}
+
+.about p {
+    font-size: 16px;
+}
+
+.about ul li {
+    font-size: 18px;
+}
+
+
+/* about end  */
+/* education start  */
+
+
+.education h2 {
+    font-size: 60px;
+}
+
+.education .icon span i {
+    font-size: 45px;
+    border: 1px solid transparent;
+    transition: 0.7s;
+}
+
+.education .icon span:hover i {
+    transform: rotateY(180deg);
+    background-color: white !important;
+    border: 1px solid #80db66 !important;
+    color: #80db66 !important;
+}
+
+.education .icon p {
+    font-size: 18px;
+}
+
+/* education end  */
+/* skill start  */
+.skill
+{
+    padding: 50px 0;
+}
+.skill i {
+    font-size: 120px;
+}
+.skill .skill-info
+{
+    width: 300px;
+    height:300px;
+}
+
+/* .skill h2 {
+    font-size: 60px;
+} */
+
+/* skill end  */
+/* project start  */
+.project
+{
+    padding: 100px 0;
+}
+.project h2 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+
+/* project end  */
+
+.contact p
+{
+    font-size: 18px;
+}
+p{
+    margin: 0!important;
+}
