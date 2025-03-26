@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest Mart-Grocery</title>
+
+    <!-- favicon link -->
+    <link rel="icon" href="assets/images/favicon.svg">
+    <!-- font link  -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <!-- icon link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- header start  -->
+
+    <header class=" shadow mb-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class=" header-logo  my-3 d-none d-lg-flex d-flex justify-content-md-between justify-content-center align-items-center">
+                    <div class="col-2">
+                        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="col-5">
+
+                        <form action="#">
+                            <div
+                                class="search-box rounded-2 d-flex justify-content-between align-items-center border border-primary border-3 p-3 ">
+                                <div class="dropdown">
+                                    <a class="btn border-0 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        All Categories
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">All Categories</a></li>
+                                        <li><a class="dropdown-item" href="#">Milk & Dairies</a></li>
+                                        <li><a class="dropdown-item" href="#">Wines Alcohol</a></li>
+                                        <li><a class="dropdown-item" href="#">Pet Foods Toy</a></li>
+                                        <li><a class="dropdown-item" href="#">Fast food</a></li>
+                                        <li><a class="dropdown-item" href="#">Baking Material</a></li>
+                                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Fresh SeaFood</a></li>
+                                        <li><a class="dropdown-item" href="#">Noodles Rice</a></li>
+                                        <li><a class="dropdown-item" href="#">Ice Cream</a></li>
+                                    </ul>
+                                </div>
+
+                                <input type="text" placeholder="Search for items "
+                                    class=" border-0 ps-2 d-flex z-3 justify-content-end w-75" style="max-width: 100%;">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5 d-none d-lg-flex d-flex justify-content-end align-items-center ">
+                        <div class="icon  ms-2">
+                            <ul class="d-flex justify-content-end align-items-center list-unstyled ">
+                                <a href="#" class="text-dark text-nowrap  me-2">
+                                    <li><i class="fa-solid fa-code-compare m-2 fs-4"></i>Compare</li>
+                                </a>
+                                <a href="#" class="text-dark text-nowrap me-2">
+                                    <li><i class="fa-regular fa-heart m-2 fs-4"></i>Wishlist
+                                </a></li>
+                                <a href="#" class="text-dark text-nowrap me-2">
+                                    <li><i class="fa-solid fa-cart-shopping  m-2 fs-4"></i>Cart
+                                </a></li>
+                                <a href="#" class="text-dark text-nowrap ">
+                                    <li><i class="fa-regular fa-user m-2 fs-4"></i>Account
+                                </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr class="my-1">
+
+
+                <nav class="navbar navbar-expand-lg bg-color-dark" aria-label="breadcrumb">
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#header-offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex d-lg-none">
+                        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="dropdown mx-2 d-none d-lg-flex justify-content-start align-items-center ">
+                        <a class="btn border-0 bg-btn p-3 fs-6 fw-bold
+                                text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-grip m-2"></i> Brows
+                            All Categories
+                        </a>
+
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">All
+                                    Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Milk &
+                                    Dairies</a></li>
+                            <li><a class="dropdown-item" href="#">Wines
+                                    Alcohol</a></li>
+                            <li><a class="dropdown-item" href="#">Pet
+                                    Foods Toy</a></li>
+                            <li><a class="dropdown-item" href="#">Fast
+                                    food</a></li>
+                            <li><a class="dropdown-item" href="#">Baking
+                                    Material</a></li>
+                            <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                            <li><a class="dropdown-item" href="#">Fresh
+                                    SeaFood</a></li>
+                            <li><a class="dropdown-item" href="#">Noodles
+                                    Rice</a></li>
+                            <li><a class="dropdown-item" href="#">Ice
+                                    Cream</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="collapse navbar-collapse d-none d-flex justify-content-center align-items-center "
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 breadcrumb d-flex justify-content-center align-items-center">
+
+                            <li class="me-5 "><a href="index.html" class="secondary-text fw-bold fs-6">Home</a></li>
+                            <li class="me-5"><a href="about.html" class="primary-text fw-bold fs-6">About</a></li>
+                            <li class="me-5"><a href="shop.html" class="primary-text fw-bold fs-6">Shop</a></li>
+                            <li class="me-5"><a href="blog.html" class="primary-text fw-bold fs-6">Blog</a></li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="btn primary-text fw-bold fs-6 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                            
+                                <ul class="dropdown-menu " >
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="me-5"><a href="contact.html" class="primary-text fw-bold fs-6">Contact </a></li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <div class="icon d-flex justify-content-end align-items-center mx-2">
+                        <i class="fa-solid fa-headphones-simple fs-1"></i>
+                        <div class="info ps-2">
+                            <h2 class="text-secondary fw-bold m-0">1900-888</h2>
+                            <small>24/7 Support Center</small>
+                        </div>
+                    </div>
+
+
+                </nav>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="header-offcanvas"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                            <img src="assets/images/logo.svg" alt="" style="width: 200px; ">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="me-5 "><a href="index.html" class="secondary-text fw-bold fs-6">Home</a></li>
+                            <li class="me-5"><a href="about.html" class="primary-text fw-bold fs-6">About</a></li>
+                            <li class="me-5"><a href="shop.html" class="primary-text fw-bold fs-6">Shop</a></li>
+                            <li class="me-5"><a href="blog.html" class="primary-text fw-bold fs-6">Blog</a></li>
+                            <li class="me-5"><a href="page.html" class="primary-text fw-bold fs-6">Pages</a></li>
+                            <li class="me-5"><a href="contact.html" class="primary-text fw-bold fs-6">Contact<i
+                                        class="fa-solid fa-angle-down ms-1 fs-6"></i> </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- about start -->
+    <section class="about my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="image rounded-2">
+                        <img src="assets/images/about-1.png" class="rounded-3" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="content my-5">
+                        <h2 class="fw-bold">Welcome to Nest</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate id est laborum.
+                            <br><br>Ius ferri velit sanctus cu, sed at soleat accusata. Dictas prompta et Ut placerat
+                            legendos interpre.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante Etiam
+                            sit amet orci eget. Quis commodo odio aenean sed adipiscing. Turpis massa tincidunt dui ut
+                            ornare lectus. Auctor elit sed vulputate mi sit amet. Commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate id est laborum.
+                        </p>
+                        <div class="images d-flex my-4">
+                            <div class="col-3 mx-3">
+                                <img src="assets/images/about-2.png" alt="" class="rounded-3">
+                            </div>
+                            <div class="col-3 mx-3">
+                                <img src="assets/images/about-3.png" alt="" class="rounded-3">
+                            </div>
+                            <div class="col-3 mx-3 ">
+                                <img src="assets/images/about-4.png" alt="" class="rounded-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end  -->
+    <!-- service start -->
+    <section class="service my-5">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2 class="fw-bold fs-1 mb-5">What we provide</h2>
+                </div>
+                <div class="icons d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-1 (1).svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">Best Prices & Offers</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-2 (1).svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">Wide Assortment</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-3 (1).svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">Free Delivery</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons my-5 d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-4 (1).svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">Easy Returns</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-5 (1).svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">100% Satisfaction</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" border rounded border-1 p-4 mx-2 my-2">
+                            <div class="box d-flex flex-column justify-content-center align-items-center ">
+                                <img src="assets/images/icon-6.svg" width="100px" alt="">
+                                <h3 class="py-3 fw-bold">Great Daily Deal</h3>
+
+                                <p class="fs-6  text-center py-3">There are many variations of passages of Lorem
+                                    Ipsum available, but the majority have suffered alteration in some form</p>
+                                <a href="#" class="secondary-text py-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services end  -->
+
+    <!-- performance start  -->
+    <section class="performance my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="images">
+                        <img src="assets/images/about-5 (1).png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                    <div class="content px-5">
+                        <h4>Our Performance</h4>
+                        <h2 class="fs-1 fw-bold my-3">Your Partner for e-commerce grocery <br> solution</h2>
+                        <p my-2>
+                            Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                            <br><br>
+
+                            Pitatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia
+                            voluptas sit aspernatur aut odit aut fugit, sed quia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- performance end  -->
+    <!-- team start  -->
+    <section class="team my-5">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2 class="fw-bold text-center fs-1 mb-5">Our Team </h2>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="content">
+                        <h4>Our Team</h4>
+                        <h2 class="fs-1 fw-bold my-4">Meet Our Expert Team
+                        </h2>
+                        <p class="fs-6 my-4">Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor
+                            imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus.
+                            <br><br>
+                            Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon
+                            sequata congue idsem. Maecenas malesuada faucibus finibus.
+                        </p>
+
+
+                        <button class="bg-btn border-0 rounded-3 px-4 py-2 text-light fw-bold ">View All
+                            Members</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center align-items-center ">
+                    <div class="col-12 col-lg-6">
+                        <div class=" mx-2 mt-2">
+                            <div class="card border-0">
+                                <div class="bg-image border-0 ">
+                                    <img src="assets/images/about-6.png" alt="" class="rounded-4">
+
+                                    <div class="content  rounded-3 position-absolute top-75 start-50 translate-middle bg-white text-white w-75 p-4 shadow ">
+
+
+                                        <h5  class="card-title border-0 text-nowrap d-flex flex-column justify-content-center align-items-center">
+                                            <a href="#" class="primary-text fw-bold fs-3">H. Merinda</a>
+                                        </h5>
+                                        <p class="text-secondary">CEO & Co-founder</p>
+                                        <ul class="list-unstyled d-flex">
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-youtube"></i></a></li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="  mx-2 mt-2">
+                            <div class="card border-0">
+                                <div class="bg-image border-0 ">
+                                    <img src="assets/images/about-8.png" alt="" class="rounded-4">
+
+                                    <div class="content  rounded-3 position-absolute top-75 start-50 translate-middle bg-white text-white w-75 p-4 shadow ">
+                                        <h5 class="card-title border-0 text-nowrap d-flex flex-column justify-content-center align-items-center">
+                                            <a href="#" class="primary-text fw-bold fs-3">Dilan Specter</a>
+                                        </h5>
+                                        <p class="text-secondary">Head Engineer</p>
+                                        <ul class="list-unstyled d-flex">
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a href="#" class="secondary-text mx-1"><i
+                                                        class="fa-brands fa-youtube"></i></a></li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- team end  -->
+
+    <!-- service start  -->
+    <section class="service mb-5" style="margin-top: 130px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="banner-main">
+                    <div class="banner-image position-relative rounded"
+                        style="background-image: url('assets/images/banner-10.png'); background-position: lright;padding:110px 0; background-repeat:  no-repeat;">
+
+
+                        <div class=" d-flex flex-column justify-content-center align-items-start ps-5">
+                            <img src="assets/images/banner-9.png" alt="" width="800px"
+                                class="position-absolute top-0 end-0 bottom-0">
+                            <h2 class="fw-bolder fs-1 z-3">Stay home & get your daily <br>
+                                needs from our shop
+                            </h2>
+                            <h5 class="z-3">Start You'r Daily Shopping with Nest Mart</h5>
+
+                            <form action="#">
+                                <div class="search py-3 d-flex position-relative w-100">
+                                    <input type="text" placeholder="Your email Address" style="padding-right:200px"
+                                        class="d-flex align-items-center border-0 rounded-5 ps-3  py-3 ">
+                                    <button
+                                        class="border-0 bg-btn rounded-5 p-3 px-4 fw-bold position-absolute end-0 text-light ">Subscribe</button>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="icons my-3 d-none d-lg-flex">
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center">
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-1.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Best Price & offers</h4>
+                                    <p>Orders $50 or more</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-2.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Free delivery
+                                    </h4>
+                                    <p class="text-nowrap">24/7 amazing services</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-3.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Great daily deal
+                                    </h4>
+                                    <p>When you sign up</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-4.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Wide assortment
+                                    </h4>
+                                    <p>Mega Discounts</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-5.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Easy returns
+                                    </h4>
+                                    <p> Within 30 days</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service end  -->
+    <!-- footer start  -->
+    <footer class="my-3">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="d-flex flex-wrap justify-content-center align-content-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <img src="assets/images/logo.svg" alt="">
+                            <p class="mt-4 m-2 fs-6 fw-semibold"> Awesome grocery store website template</p>
+                            <ul class="list-unstyled my-2">
+                                <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                            class="fa-solid fa-location-dot secondary-text m-1"></i>
+                                        <p class="fs-6 fw-bold primary-text">Address: </p><span
+                                            class="primary-text  fs-6">5171 W Campbell Ave undefined Kent, Utah 53127
+                                            United
+                                            States</span>
+                                    </a></li>
+                                <li class="m-2"> <a href="#" class="d-flex justify-content-start align-items-start"><i
+                                            class="fa-solid fa-headphones-simple secondary-text m-1"></i>
+                                        <p class="fs-6 fw-bold primary-text">Call Us:</p><span
+                                            class="primary-text  fs-6">(+91) - 540-025-124553</span>
+                                    </a></li>
+                                <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                            class="fa-solid fa-paper-plane secondary-text m-1"></i>
+                                        <p class="fs-6 fw-bold primary-text">Email:</p><span
+                                            class="primary-text  fs-6">sale@Nest.com </span>
+                                    </a></li>
+                                <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                            class="fa-solid fa-clock secondary-text m-1"></i>
+                                        <p class="fs-6 fw-bold primary-text">Hours: </p><span
+                                            class="primary-text  fs-6">10:00 - 18:00, Mon - Sat</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="account">
+                            <h3>Account</h3>
+                            <ul class="list-unstyled">
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold ">Sign In</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">View Cart</a></li>
+                                <li class="m-2"><a href="#" class="primary-text  fw-semibold">My Wishlist</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Track My Order</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Help Ticket</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Shipping Details</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Compare products</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="corporate">
+                            <h3>Corporate</h3>
+                            <ul class="list-unstyled">
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold ">Become a Vendor</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Affiliate Program</a></li>
+                                <li class="m-2"><a href="#" class="primary-text  fw-semibold">Farm Business</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold"> Farm Careers</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Our Suppliers</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold"> Accessibility</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Promotions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 ">
+                        <div class="popular">
+                            <h3>Popular</h3>
+                            <ul class="list-unstyled">
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold ">Milk & Flavoured Milk</a>
+                                </li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold"> Butter and Margarine</a>
+                                </li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold"> Marmaladesr</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Sour Cream and Dips</a>
+                                </li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Tea & Kombucha</a></li>
+                                <li class="m-2"><a href="#" class="primary-text  fw-semibold"> Eggs Substitutes</a></li>
+                                <li class="m-2"><a href="#" class="primary-text fw-semibold">Cheese</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

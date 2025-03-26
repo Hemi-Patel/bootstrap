@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest Mart-Grocery</title>
+    <!-- favicon link -->
+    <link rel="icon" href="assets/images/favicon.svg">
+    <!-- font link  -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <!-- icon link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- header start  -->
+
+    <header class=" shadow mb-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class=" header-logo  my-3 d-none d-lg-flex d-flex justify-content-md-between justify-content-center align-items-center">
+                    <div class="col-2">
+                        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="col-5">
+
+                        <form action="#">
+                            <div
+                                class="search-box rounded-2 d-flex justify-content-between align-items-center border border-primary border-3 p-3 ">
+                                <div class="dropdown">
+                                    <a class="btn border-0 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        All Categories
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">All Categories</a></li>
+                                        <li><a class="dropdown-item" href="#">Milk & Dairies</a></li>
+                                        <li><a class="dropdown-item" href="#">Wines Alcohol</a></li>
+                                        <li><a class="dropdown-item" href="#">Pet Foods Toy</a></li>
+                                        <li><a class="dropdown-item" href="#">Fast food</a></li>
+                                        <li><a class="dropdown-item" href="#">Baking Material</a></li>
+                                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Fresh SeaFood</a></li>
+                                        <li><a class="dropdown-item" href="#">Noodles Rice</a></li>
+                                        <li><a class="dropdown-item" href="#">Ice Cream</a></li>
+                                    </ul>
+                                </div>
+
+                                <input type="text" placeholder="Search for items "
+                                    class=" border-0 ps-2 d-flex z-3 justify-content-end w-75" style="max-width: 100%;">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5 d-none d-lg-flex d-flex justify-content-end align-items-center ">
+                        <div class="icon  ms-2">
+                            <ul class="d-flex justify-content-end align-items-center list-unstyled ">
+                                <a href="#" class="text-dark text-nowrap  me-2">
+                                    <li><i class="fa-solid fa-code-compare m-2 fs-4"></i>Compare</li>
+                                </a>
+                                <a href="#" class="text-dark text-nowrap me-2">
+                                    <li><i class="fa-regular fa-heart m-2 fs-4"></i>Wishlist
+                                </a></li>
+                                <a href="#" class="text-dark text-nowrap me-2">
+                                    <li><i class="fa-solid fa-cart-shopping  m-2 fs-4"></i>Cart
+                                </a></li>
+                                <a href="#" class="text-dark text-nowrap ">
+                                    <li><i class="fa-regular fa-user m-2 fs-4"></i>Account
+                                </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr class="my-1">
+
+
+                <nav class="navbar navbar-expand-lg bg-color-dark" aria-label="breadcrumb">
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#header-offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex d-lg-none">
+                        <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="dropdown mx-2 d-none d-lg-flex justify-content-start align-items-center ">
+                        <a class="btn border-0 bg-btn p-3 fs-6 fw-bold
+                                text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-grip m-2"></i> Brows
+                            All Categories
+                        </a>
+
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">All
+                                    Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Milk &
+                                    Dairies</a></li>
+                            <li><a class="dropdown-item" href="#">Wines
+                                    Alcohol</a></li>
+                            <li><a class="dropdown-item" href="#">Pet
+                                    Foods Toy</a></li>
+                            <li><a class="dropdown-item" href="#">Fast
+                                    food</a></li>
+                            <li><a class="dropdown-item" href="#">Baking
+                                    Material</a></li>
+                            <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                            <li><a class="dropdown-item" href="#">Fresh
+                                    SeaFood</a></li>
+                            <li><a class="dropdown-item" href="#">Noodles
+                                    Rice</a></li>
+                            <li><a class="dropdown-item" href="#">Ice
+                                    Cream</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="collapse navbar-collapse d-none d-flex justify-content-center align-items-center "
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 breadcrumb d-flex justify-content-center align-items-center">
+
+                            <li class="me-5 "><a href="index.html" class="secondary-text fw-bold fs-6">Home</a></li>
+                            <li class="me-5"><a href="about.html" class="primary-text fw-bold fs-6">About</a></li>
+                            <li class="me-5"><a href="shop.html" class="primary-text fw-bold fs-6">Shop</a></li>
+                            <li class="me-5"><a href="blog.html" class="primary-text fw-bold fs-6">Blog</a></li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="btn primary-text fw-bold fs-6 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                            
+                                <ul class="dropdown-menu " >
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                    <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="me-5"><a href="contact.html" class="primary-text fw-bold fs-6">Contact </a></li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <div class="icon d-flex justify-content-end align-items-center mx-2">
+                        <i class="fa-solid fa-headphones-simple fs-1"></i>
+                        <div class="info ps-2">
+                            <h2 class="text-secondary fw-bold m-0">1900-888</h2>
+                            <small>24/7 Support Center</small>
+                        </div>
+                    </div>
+
+
+                </nav>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="header-offcanvas"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                            <img src="assets/images/logo.svg" alt="" style="width: 200px; ">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="me-5 "><a href="index.html" class="secondary-text fw-bold fs-6">Home</a></li>
+                            <li class="me-5"><a href="about.html" class="primary-text fw-bold fs-6">About</a></li>
+                            <li class="me-5"><a href="shop.html" class="primary-text fw-bold fs-6">Shop</a></li>
+                            <li class="me-5"><a href="blog.html" class="primary-text fw-bold fs-6">Blog</a></li>
+                            <li class="me-5"><a href="page.html" class="primary-text fw-bold fs-6">Pages</a></li>
+                            <li class="me-5"><a href="contact.html" class="primary-text fw-bold fs-6">Contact<i
+                                        class="fa-solid fa-angle-down ms-1 fs-6"></i> </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- banner start  -->
+    <section class="banner my-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="banner-main">
+                    <div id="carouselExampleSlidesOnly" class="carousel
+                            slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-4">
+                            <div class="carousel-item active "
+                                style="background-image:url('assets/images/slider-1.png');background-position: right; padding:150px 0; background-size:cover;">
+                                <div class=" d-flex flex-column justify-content-center align-items-start ps-5">
+                                    <h1 class="fw-bolder" style="font-size:72px">Don't miss
+                                        amazing
+                                        <br>
+                                        grocery deals
+                                    </h1>
+                                    <h3>Sign up for daily newsletter</h3>
+
+                                    <form action="#">
+                                        <div class="search py-3 d-flex position-relative w-100">
+                                            <input type="text" placeholder="Your email Address"
+                                                style="padding-right:200px"
+                                                class="d-flex align-items-center border-0 rounded-5 ps-3  py-3 ">
+                                            <button
+                                                class="border-0 bg-btn rounded-5 p-3 px-4 fw-bold position-absolute end-0 text-light ">Subscribe</button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <<div class="carousel-item rounded-4" style="background-image: url('assets/images/slider-2.png');
+                                    background-position: right; padding:150px 0;background-size: cover;">
+                                <div class=" d-flex flex-column justify-content-center align-items-start ps-5">
+                                    <h1 class="fw-bolder" style="font-size:72px">Fresh Vegetables
+                                        <br>
+                                        Big discount
+                                    </h1>
+                                    <h3>Save up to 50% off on your first
+                                        order</h3>
+
+                                    <form action="#">
+                                        <div class="search py-3 d-flex position-relative w-100">
+                                            <input type="text" placeholder="Your email Address"
+                                                style="padding-right:200px"
+                                                class="d-flex align-items-center border-0 rounded-5 ps-3  py-3 ">
+                                            <button
+                                                class="border-0 bg-btn rounded-5 p-3 px-4 fw-bold position-absolute end-0 text-light">Subscribe</button>
+
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- banner end  -->
+    <!-- feature product start  -->
+    <section class="feature-product my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="feature-menu d-flex justify-content-start align-items-center">
+                    <h2 class="d-flex align-items-center"> Feature Categories</h2>
+                    <ul class="m-0 list-unstyled d-flex justify-content-center align-items-center">
+                        <li class="ms-5 mx-3"><a href="#" class="primary-text fw-bold">Cake & Milk</a></li>
+                        <li class="mx-3"> <a href="#" class="primary-text
+                            fw-bold">Coffee & Teas</a></li>
+                        <li class="mx-3"><a href="#" class="primary-text
+                            fw-bold">Pet Food</a></li>
+                        <li class="mx-3"><a href="#" class="primary-text
+                            fw-bold">Vegetables</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-12">
+                    <div class="f-products w-100 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 p-2 border-0 " style="background-color: #f8edef ;">
+                            <img src="assets/images/cat-1.png" alt="">
+                            <p class="text-center fw-bold">Vegetables</p>
+                            <span class="text-center">72 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 p-2 border-0 " style="background-color: #e7f1e1 ;">
+                            <img src="assets/images/cat-2.png" alt="">
+                            <p class="text-center fw-bold">Strawberry</p>
+                            <span class="text-center">36 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #e9f1f5 ;">
+                            <img src="assets/images/cat-3.png" alt="">
+                            <p class="text-center fw-bold">Snaks</p>
+                            <span class="text-center">56 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #eceef8 ;">
+                            <img src="assets/images/cat-4.png" alt="">
+                            <p class="text-center fw-bold">Black Pulm</p>
+                            <span class="text-center">123 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #faecfa ;">
+                            <img src="assets/images/cat-5.png" alt="">
+                            <p class="text-center fw-bold text-nowrap">Custurd
+                                Apple</p>
+                            <span class="text-center">24 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #fff2e5 ;">
+                            <img src="assets/images/cat-9png" alt="">
+                            <p class="text-center fw-bold">Red Apple</p>
+                            <span class="text-center">54 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #fdefef ;">
+                            <img src="assets/images/cat-11.png" alt="">
+                            <p class="text-center fw-bold text-nowrap">Organic Kiwi</p>
+                            <span class="text-center">28 items</span>
+                        </div>
+                        <div class=" card  col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #eff7fa;">
+                            <img src="assets/images/cat-12.png" alt="">
+                            <p class="text-center fw-bold ">Peach</p>
+                            <span class="text-center">14 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #F2FCE4 ;">
+                            <img src="assets/images/cat-13.png" alt="">
+                            <p class="text-center fw-bold">Cake & Milk</p>
+                            <span class="text-center">26 items</span>
+                        </div>
+                        <div class=" card col-md-3 col-lg-1 m-2 p-2 border-0 " style="background-color: #ECFFEC ;">
+                            <img src="assets/images/cat-14.png" alt="">
+                            <p class="text-center fw-bold text-nowrap">Coffee &
+                                Teas</p>
+                            <span class="text-center">89 items</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="feature-card d-flex justify-content-center align-items-center  ">
+                    <div class="col-4 ms-0 me-1">
+                        <div class="card border-0" style="background-image: url('assets/images/banner-1.png'); 
+                        background-position:
+                right; padding:85px 0; background-size:cover;">
+                            <div class="content ps-3 ">
+                                <h3 class="fw-bold my-3">Everyday Fresh &
+                                    <br>
+                                    clean with our <br> products
+
+                                </h3>
+                                <button class="bg-btn border-0 rounded fs-6 text-white fw-bold p-2">Shop Now <i
+                                        class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 m-1">
+                        <div class="card border-0" style="background-image: url('assets/images/banner-2.png'); background-position:
+                right; padding:100px 0; background-size:cover;">
+                            <div class="content ps-3">
+                                <h3 class="fw-bold my-3">Make your Breakfast
+                                    <br>
+                                    Healthy & Easy
+                                </h3>
+                                <button class="bg-btn border-0 rounded fs-6 text-white fw-bold p-2">Shop Now <i
+                                        class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 m-1">
+                        <div class="card border-0" style="background-image: url('assets/images/banner-3.png'); background-position:
+                right; padding:100px 0; background-size:cover;">
+                            <div class="content ps-3">
+                                <h3 class="fw-bold my-3">The Best Organic
+                                    <br>
+                                    Products Online
+                                </h3>
+                                <button class="bg-btn border-0 rounded fs-6 text-white fw-bold p-2">Shop Now <i
+                                        class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature product end      -->
+    <!-- product start  -->
+    <section class="product my-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" d-flex  justify-content-between align-items-center">
+                    <h2 class="d-flex align-items-center fw-bold"> Popular Products</h2>
+                    <div class="menu d-none d-lg-flex">
+                        <ul class="m-0 list-unstyled d-flex ">
+                            <li class="ms-5 mx-3"><a href="#" class="secondary-text fw-bold">All</a></li>
+                            <li class="mx-3"> <a href="#" class="primary-text fw-bold">Coffee & Teas</a></li>
+                            <li class="mx-3"><a href="#" class="primary-text fw-bold">Pet Food</a></li>
+                            <li class="mx-3"><a href="#" class="primary-text fw-bold">Meats</a></li>
+                            <li class="mx-3"><a href="#" class="primary-text fw-bold">Vegetables</a></li>
+                            <li class="mx-3"><a href="#" class="primary-text fw-bold">Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="product-card my-4  d-flex flex-wrap justify-content-center align-items-center border border-0 ">
+                    <div class="col-12  col-md-6 col-lg-3 ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-2">
+                                <img id="front-image" src="assets/images/product-1-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-1-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-6 col-lg-3">
+                        <div class="card mt-2 me-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-2-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-2-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-6 col-lg-3 ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-3-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-3-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-6 col-lg-3  ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-4-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-4-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="product-card my-4 d-flex flex-wrap justify-content-center align-items-center border border-0 ">
+                    <div class="col-12 col-md-6 col-lg-3  ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-2">
+                                <img id="front-image" src="assets/images/product-5-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-5-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3  ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-6-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-6-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3  ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-7-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-7-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3  ">
+                        <div class="card me-2 mt-2 border border-1 rounded-5">
+                            <div class="top-button">
+                                <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                            </div>
+                            <div class="images position-relative p-3">
+                                <img id="front-image" src="assets/images/product-8-1.jpg" class="img-fluid">
+                                <img id="back-image" src="assets/images/product-8-2.jpg"
+                                    class="img-fluid position-absolute top-0 start-0">
+                                <div class="icon  ">
+                                    <ul class="list-unstyled d-flex bg-light">
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-code-compare"></i></a></li>
+                                        <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                    class="fa-solid fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                        Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <i class="fa-solid fa-star small" style="color:orange"></i>
+                                <span>(4.0)</span>
+
+                                <p class="small fw-bold secondary-text">By NestFood</p>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div class="price d-flex align-items-center justify-content-center a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                            style="background-color: #DEF9EC;"><i class="fa-solid fa-cart-shopping"
+                                                class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- product end  -->
+    <!-- best sells start  -->
+    <section class="best-sells">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="menu d-flex justify-content-between align-items-center ">
+                    <div class="title">
+                        <h2 class="fw-bold">Daily Best Sells</h2>
+                    </div>
+                    <ul class="list-unstyled d-none d-lg-flex d-flex justify-content-center align-items-center">
+                        <li><a href="#" class="fw-bold mx-2  secondary-text">Feature</a></li>
+                        <li><a href="#" class="fw-bold mx-2  primary-text">Popular</a></li>
+                        <li><a href="#" class="fw-bold mx-2  primary-text">New Added</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 ">
+                    <div class="card border border-0"
+                        style="background-image:url('assets/images/banner-4.png'); padding:300px 0; background-position:right; background-size:cover;">
+                        <div class="content position-absolute top-0 m-3">
+                            <h2>Bring Nature <br>into your <br>home</h2>
+                            <button class="bg-btn border-0 rounded fs-6 text-white fw-bold p-2">Shop Now <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="slider d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="col-12 col-md-6 col-lg-3 ">
+                            <div class="card  me-1 mt-2 border border-1 rounded-5">
+                                <div class="top-button">
+                                    <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                                </div>
+                                <div class="images position-relative p-2">
+                                    <img id="front-image" src="assets/images/product-1-1.jpg" class="img-fluid">
+                                    <img id="back-image" src="assets/images/product-1-2.jpg"
+                                        class="img-fluid position-absolute top-0 start-0">
+                                    <div class="icon  ">
+                                        <ul class="list-unstyled d-flex bg-light">
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-regular fa-heart"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-code-compare"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                            Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <span>(4.0)</span>
+
+                                    <p class="small fw-bold secondary-text">By NestFood</p>
+
+                                    <div class="price d-flex align-items-center justify-content-start a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%; "
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <small style="color:#ADADAD">sold:90/120</small>
+                                    <div class="button my-3">
+                                        <button
+                                            class=" border-0 text-white bg-btn small px-4 fw-bold w-100 py-2 rounded"><i
+                                                class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  ">
+                            <div class="card  me-1 mt-2 border border-1 rounded-5">
+                                <div class="top-button">
+                                    <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                                </div>
+                                <div class="images position-relative p-2">
+                                    <img id="front-image" src="assets/images/product-2-1.jpg" class="img-fluid">
+                                    <img id="back-image" src="assets/images/product-2-2.jpg"
+                                        class="img-fluid position-absolute top-0 start-0">
+                                    <div class="icon  ">
+                                        <ul class="list-unstyled d-flex bg-light">
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-regular fa-heart"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-code-compare"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                            Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <span>(4.0)</span>
+
+                                    <p class="small fw-bold secondary-text">By NestFood</p>
+
+                                    <div class="price d-flex align-items-center justify-content-start a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%; "
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <small style="color:#ADADAD">sold:90/120</small>
+                                    <div class="button my-3">
+                                        <button
+                                            class=" border-0 text-white bg-btn small px-4 fw-bold w-100 py-2 rounded"><i
+                                                class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  ">
+                            <div class="card  me-1 mt-2 border border-1 rounded-5">
+                                <div class="top-button">
+                                    <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                                </div>
+                                <div class="images position-relative p-2">
+                                    <img id="front-image" src="assets/images/product-3-1.jpg" class="img-fluid">
+                                    <img id="back-image" src="assets/images/product-3-2.jpg"
+                                        class="img-fluid position-absolute top-0 start-0">
+                                    <div class="icon  ">
+                                        <ul class="list-unstyled d-flex bg-light">
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-regular fa-heart"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-code-compare"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                            Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <span>(4.0)</span>
+
+                                    <p class="small fw-bold secondary-text">By NestFood</p>
+
+                                    <div class="price d-flex align-items-center justify-content-start a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%; "
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <small style="color:#ADADAD">sold:90/120</small>
+                                    <div class="button my-3">
+                                        <button
+                                            class=" border-0 text-white bg-btn small px-4 fw-bold w-100 py-2 rounded"><i
+                                                class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 ">
+                            <div class="card  me-1 mt-2 border border-1 rounded-5">
+                                <div class="top-button">
+                                    <p class="top-0 small start-0  p-1 bg-danger ">sale</p>
+                                </div>
+                                <div class="images position-relative p-2">
+                                    <img id="front-image" src="assets/images/product-4-1.jpg" class="img-fluid">
+                                    <img id="back-image" src="assets/images/product-4-2.jpg"
+                                        class="img-fluid position-absolute top-0 start-0">
+                                    <div class="icon  ">
+                                        <ul class="list-unstyled d-flex bg-light">
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-regular fa-heart"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-code-compare"></i></a></li>
+                                            <li><a href="#" class="bg-light p-1 border" style="color:#ADADAD"><i
+                                                        class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title border-0 "><a href="@" class="primary-text fw-bold"> Seeds of
+                                            Change Organic Quinoa, Brown, & Red Rice</a></h5>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <i class="fa-solid fa-star small" style="color:orange"></i>
+                                    <span>(4.0)</span>
+
+                                    <p class="small fw-bold secondary-text">By NestFood</p>
+
+                                    <div class="price d-flex align-items-center justify-content-start a">
+                                        <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                style="color:#ADADAD">$32.8</s></h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%; "
+                                            aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <small style="color:#ADADAD">sold:90/120</small>
+                                    <div class="button my-3">
+                                        <button
+                                            class=" border-0 text-white bg-btn small px-4 fw-bold w-100 py-2 rounded"><i
+                                                class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- best sells end  -->
+    <!-- deals start  -->
+    <section class="deals my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="menu d-flex justify-content-between ">
+                    <div class="title">
+                        <h2 class="fw-bold">Deals of the Day</h2>
+                    </div>
+                    <ul class="list-unstyled d-flex ">
+                        <li><a href="#" class="fw-bold mx-2  secondary-text">All deals</a></li>
+
+                    </ul>
+                </div>
+                <div class="deals d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card me-2  border-0">
+                            <div class="bg-image border-0 ">
+                                <img src="assets/images/banner-5.png" alt="" class="rounded-4">
+                                <div
+                                    class="countdown my-3 position-absolute top-50 start-50 translate-middle text-dark  p-3 text-center">
+                                    <ul class=" list-unstyled d-flex mx-3">
+                                        <li class="bg-white rounded p-2 m-2"><span class="days border-3"></span> days
+                                        </li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="hours"></span> hours</li>
+                                        <li class="bg-white rounded p-2 m-2"><span class="minutes"></span> minutes</li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="seconds"></span> seconds</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="content  rounded-3 position-absolute top-75 start-50 translate-middle bg-white text-whitepy-1 ">
+                                    <div class="content  shadow p-3 ">
+
+                                        <h5 class="card-title border-0 text-nowrap"><a href="@"
+                                                class="primary-text fw-bold"> Seeds of
+                                                Change Organic Quinoa,<br> Brown, & Red Rice</a></h5>
+                                        <ul class="list-unstyled d-flex ">
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star-half-stroke"></i></a></li>
+                                            <span>(4.0)</span>
+                                        </ul>
+                                        <p class="small fw-bold secondary-text">By NestFood</p>
+                                        <div class="d-flex justify-content-between align-items-center my-2">
+
+                                            <div class="price d-flex align-items-center justify-content-center a">
+                                                <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                        style="color:#ADADAD">$32.8</s></h4>
+                                            </div>
+                                            <div class="button">
+                                                <button
+                                                    class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                                    style="background-color: #DEF9EC;"><i
+                                                        class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card  me-2 border-0">
+                            <div class="bg-image border-0 ">
+                                <img src="assets/images/banner-6 .png" alt="" class="rounded-4">
+                                <div
+                                    class="countdown my-3 position-absolute top-50 start-50 translate-middle text-dark  p-3 text-center">
+                                    <ul class=" list-unstyled d-flex mx-3">
+                                        <li class="bg-white rounded p-2 m-2"><span class="days border-3"></span> days
+                                        </li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="hours"></span> hours</li>
+                                        <li class="bg-white rounded p-2 m-2"><span class="minutes"></span> minutes</li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="seconds"></span> seconds</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="content  rounded-2 position-absolute top-75 start-50 translate-middle bg-white text-white ">
+                                    <div class="content shadow p-3">
+
+                                        <h5 class="card-title border-0 text-nowrap"><a href="@"
+                                                class="primary-text fw-bold"> Seeds of
+                                                Change Organic Quinoa,<br> Brown, & Red Rice</a></h5>
+                                        <ul class="list-unstyled d-flex ">
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star-half-stroke"></i></a></li>
+                                            <span>(4.0)</span>
+                                        </ul>
+                                        <p class="small fw-bold secondary-text">By NestFood</p>
+                                        <div class="d-flex justify-content-between align-items-center my-2">
+
+                                            <div class="price d-flex align-items-center justify-content-center a">
+                                                <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                        style="color:#ADADAD">$32.8</s></h4>
+                                            </div>
+                                            <div class="button">
+                                                <button
+                                                    class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                                    style="background-color: #DEF9EC;"><i
+                                                        class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-none d-lg-flex">
+                        <div class="card me-2 border-0">
+                            <div class="bg-image border-0 ">
+                                <img src="assets/images/banner-7.png" alt="" class="rounded-4">
+                                <div
+                                    class="countdown my-3 position-absolute top-50 start-50 translate-middle text-dark  p-3 text-center">
+                                    <ul class=" list-unstyled d-flex mx-3">
+                                        <li class="bg-white rounded p-2 m-2"><span class="days border-3"></span> days
+                                        </li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="hours"></span> hours</li>
+                                        <li class="bg-white rounded p-2 m-2"><span class="minutes"></span> minutes</li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="seconds"></span> seconds</li>
+                                    </ul>
+
+                                </div>
+                                <div
+                                    class="content  rounded-2 position-absolute top-75 start-50 translate-middle bg-white text-white ">
+                                    <div class="content shadow p-3">
+
+                                        <h5 class="card-title border-0 text-nowrap"><a href="@"
+                                                class="primary-text fw-bold"> Seeds of
+                                                Change Organic Quinoa,<br> Brown, & Red Rice</a></h5>
+                                        <ul class="list-unstyled d-flex ">
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star-half-stroke"></i></a></li>
+                                            <span>(4.0)</span>
+                                        </ul>
+                                        <p class="small fw-bold secondary-text">By NestFood</p>
+                                        <div class="d-flex justify-content-between align-items-center my-2">
+
+                                            <div class="price d-flex align-items-center justify-content-center a">
+                                                <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                        style="color:#ADADAD">$32.8</s></h4>
+                                            </div>
+                                            <div class="button">
+                                                <button
+                                                    class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                                    style="background-color: #DEF9EC;"><i
+                                                        class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-none d-lg-flex">
+                        <div class="card me-2 mt-2 border-0">
+                            <div class="bg-image border-0 ">
+                                <img src="assets/images/banner-8.png" alt="" class="rounded-4">
+                                <div
+                                    class="countdown my-3 position-absolute top-50 start-50 translate-middle text-dark  p-3 text-center">
+                                    <ul class=" list-unstyled d-flex mx-3">
+                                        <li class="bg-white rounded p-2 m-2"><span class="days border-3"></span> days
+                                        </li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="hours"></span> hours</li>
+                                        <li class="bg-white rounded p-2 m-2"><span class="minutes"></span> minutes</li>
+                                        <li class="bg-white rounded p-2 m-2 "><span class="seconds"></span> seconds</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="content  rounded-2 position-absolute top-75 start-50 translate-middle bg-white text-white ">
+                                    <div class="content shadow p-3">
+
+                                        <h5 class="card-title border-0 text-nowrap"><a href="@"
+                                                class="primary-text fw-bold"> Seeds of
+                                                Change Organic Quinoa,<br> Brown, & Red Rice</a></h5>
+                                        <ul class="list-unstyled d-flex ">
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star"></i></a></li>
+                                            <li><a href="#" class="small" style="color:orange"><i
+                                                        class="fa-solid fa-star-half-stroke"></i></a></li>
+                                            <span>(4.0)</span>
+                                        </ul>
+                                        <p class="small fw-bold secondary-text">By NestFood</p>
+                                        <div class="d-flex justify-content-between align-items-center my-2">
+
+                                            <div class="price d-flex align-items-center justify-content-center a">
+                                                <h4 class="secondary-text fw-bold ">$28.5<s class="ps-2 fs-6 fw-bold"
+                                                        style="color:#ADADAD">$32.8</s></h4>
+                                            </div>
+                                            <div class="button">
+                                                <button
+                                                    class=" border-0 secondary-text small px-4 fw-bold  py-2 rounded"
+                                                    style="background-color: #DEF9EC;"><i
+                                                        class="fa-solid fa-cart-shopping" class="m-5"></i>Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- deals end  -->
+    <!-- service start  -->
+    <section class="service mb-5" style="margin-top: 130px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="banner-main">
+                    <div class="banner-image position-relative rounded"
+                        style="background-image: url('assets/images/banner-10.png'); background-position: lright;padding:110px 0; background-repeat:  no-repeat;">
+
+
+                        <div class=" d-flex flex-column justify-content-center align-items-start ps-5">
+                            <img src="assets/images/banner-9.png" alt="" width="800px"
+                                class="position-absolute top-0 end-0 bottom-0">
+                            <h2 class="fw-bolder fs-1 z-3">Stay home & get your daily <br>
+                                needs from our shop
+                            </h2>
+                            <h5 class="z-3">Start You'r Daily Shopping with Nest Mart</h5>
+
+                            <form action="#">
+                                <div class="search py-3 d-flex position-relative w-100">
+                                    <input type="text" placeholder="Your email Address" style="padding-right:200px"
+                                        class="d-flex align-items-center border-0 rounded-5 ps-3  py-3 ">
+                                    <button
+                                        class="border-0 bg-btn rounded-5 p-3 px-4 fw-bold position-absolute end-0 text-light ">Subscribe</button>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="icons my-3 d-none d-lg-flex">
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center">
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-1.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Best Price & offers</h4>
+                                    <p>Orders $50 or more</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-2.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Free delivery
+                                    </h4>
+                                    <p class="text-nowrap">24/7 amazing services</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-3.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Great daily deal
+                                    </h4>
+                                    <p>When you sign up</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-4.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Wide assortment
+                                    </h4>
+                                    <p>Mega Discounts</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="box-1 bg-primary-subtle mx-2 px-3 py-2 rounded d-flex justify-content-center align-items-center">
+                                <img src="assets/images/icon-5.svg" alt="">
+                                <div class="content mx-3">
+                                    <h4 class="text-nowrap fs-5 fw-bold"> Easy returns
+                                    </h4>
+                                    <p> Within 30 days</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service end  -->
+    <!-- footer start  -->
+    <footer class="my-3">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="d-flex flex-wrap justify-content-center align-content-center">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <p class="mt-4 m-2 fs-6 fw-semibold"> Awesome grocery store website template</p>
+                        <ul class="list-unstyled my-2">
+                            <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                        class="fa-solid fa-location-dot secondary-text m-1"></i>
+                                    <p class="fs-6 fw-bold primary-text">Address: </p><span
+                                        class="primary-text  fs-6">5171 W Campbell Ave undefined Kent, Utah 53127 United
+                                        States</span>
+                                </a></li>
+                            <li class="m-2"> <a href="#" class="d-flex justify-content-start align-items-start"><i
+                                        class="fa-solid fa-headphones-simple secondary-text m-1"></i>
+                                    <p class="fs-6 fw-bold primary-text">Call Us:</p><span
+                                        class="primary-text  fs-6">(+91) - 540-025-124553</span>
+                                </a></li>
+                            <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                        class="fa-solid fa-paper-plane secondary-text m-1"></i>
+                                    <p class="fs-6 fw-bold primary-text">Email:</p><span
+                                        class="primary-text  fs-6">sale@Nest.com </span>
+                                </a></li>
+                            <li class="m-2"><a href="#" class="d-flex justify-content-start align-items-start"><i
+                                        class="fa-solid fa-clock secondary-text m-1"></i>
+                                    <p class="fs-6 fw-bold primary-text">Hours: </p><span
+                                        class="primary-text  fs-6">10:00 - 18:00, Mon - Sat</span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="account">
+                        <h3>Account</h3>
+                        <ul class="list-unstyled">
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold ">Sign In</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">View Cart</a></li>
+                            <li class="m-2"><a href="#" class="primary-text  fw-semibold">My Wishlist</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Track My Order</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Help Ticket</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Shipping Details</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Compare products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="corporate">
+                        <h3>Corporate</h3>
+                        <ul class="list-unstyled">
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold ">Become a Vendor</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Affiliate Program</a></li>
+                            <li class="m-2"><a href="#" class="primary-text  fw-semibold">Farm Business</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold"> Farm Careers</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Our Suppliers</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold"> Accessibility</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Promotions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="popular">
+                        <h3>Popular</h3>
+                        <ul class="list-unstyled">
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold ">Milk & Flavoured Milk</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold"> Butter and Margarine</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold"> Marmaladesr</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Sour Cream and Dips</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Tea & Kombucha</a></li>
+                            <li class="m-2"><a href="#" class="primary-text  fw-semibold"> Eggs Substitutes</a></li>
+                            <li class="m-2"><a href="#" class="primary-text fw-semibold">Cheese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- footer end  -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script>
+        // Set the countdown target date for each card
+        const countdownDates = [
+            new Date("April 30, 2025 00:00:00").getTime(), // First card's target date
+            new Date("May 15, 2025 00:00:00").getTime(), // Second card's target date
+            new Date("June 1, 2025 00:00:00").getTime(),
+            new Date("july 1, 2025 00:00:00").getTime()      // Third card's target date
+        ];
+
+        // Update each countdown every second
+        setInterval(function () {
+            const now = new Date().getTime();
+
+            // Loop over each countdown container
+            document.querySelectorAll('.countdown').forEach((countdownElement, index) => {
+                const distance = countdownDates[index] - now;
+
+                if (distance < 0) {
+                    countdownElement.innerHTML = "EXPIRED"; // Handle expiration
+                    return;
+                }
+
+                // Time calculations
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Update the respective countdown
+                countdownElement.querySelector('.days').textContent = days;
+                countdownElement.querySelector('.hours').textContent = hours;
+                countdownElement.querySelector('.minutes').textContent = minutes;
+                countdownElement.querySelector('.seconds').textContent = seconds;
+            });
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
