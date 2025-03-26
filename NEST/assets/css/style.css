@@ -1,0 +1,142 @@
+.primary-text {
+    color: #253D4E !important;
+}
+
+.secondary-text {
+    color: #3BB77E !important;
+}
+
+.bg-btn {
+    background-color: #3BB77E !important;
+}
+.bg-primary
+{
+    background-color: #3BB77E !important;
+}
+body {
+    font-family: 'Quicksand' !important;
+}
+
+.border-primary {
+    border-color: #3BB77E !important;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+button{
+    transition: 0.5s;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background: white; 
+}
+header .header-logo .search-box input {
+    background-image: url('../images/search.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    max-width:400px;
+    padding-right: 200px;
+}
+.banner button:hover,.service button:hover{
+    background-color: #29A56C !important;
+}
+
+.feature-product .feature-card button:hover,.best-sells button:hover{
+
+    background-color: #FDC040 !important;
+}
+
+.product button:hover ,.deals button:hover{
+    background-color: #3BB77E !important;
+    color: white !important;
+
+}
+footer .account ul li a,.popular ul li a,.corporate ul li a{
+    transition: 0.5s;
+}
+footer .account ul li a:hover,.popular ul li a:hover,.corporate ul li a:hover{
+    color: #29a56c !important;
+    padding-left: 10px;
+}
+
+.images {
+    
+    position: relative;
+    transition: 1s;
+    
+}
+#front-image,
+#back-image {
+    width: 100%;
+    transition: in-out, opacity 0.5s ease-in-out;
+}
+
+ .images #back-image {
+    opacity: 0;
+    
+}
+ .images:hover #back-image {
+    opacity: 1;
+   
+}
+
+.images:hover #front-image {
+    opacity: 0;
+    
+}
+.images .icon {
+    position: absolute;
+    transform: translate(50%);
+    bottom: 50%;
+    right: 50%;
+    padding: 10px;
+    opacity: 0;
+}
+
+.images:hover .icon {
+    opacity: 1;
+}
+.top-button p{
+    border-radius: 15px 0 20px 0;
+    width: 50px;
+}
+
+.countdown li {
+  font-size: 14px;
+  font-weight: bold;
+ 
+}
+
+.countdown span {
+  font-size: 24px;
+}
+  
+
+.left-shop .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  right:0px;
+  top:0;
+  z-index: 999;
+  position: sticky;
+  min-height:100px;
+  
+}
+.content-sidebar {
+  padding: 1px 16px;
+ 
+}
+
+
+
+
