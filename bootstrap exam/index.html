@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exam</title>
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- icon link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-dark">
+    <!-- header using offcanvas -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-offcanvas"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <a href="#"> <img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fw-bold" href="#">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fw-bold" href="#">Service</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fw-bold" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fw-bold" href="#">Blog</a>
+                    </li> 
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white fw-bold" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3 ">
+                        <a class="nav-link text-white fw-bold" href="registration.html">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="header-offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header bg-dark">
+            <div class="logo">
+                <a href="#"> <img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-dark">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="registration.html">Registration</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner section using curousel  -->
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"
+                            style="background-image: url('assets/images/slider1.jpg'); background-position: right; background-size: cover; padding: 250px 0;">
+                            <div class="banner-content d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-white">The Hair Fashion</h3>
+                                <h1 class="text-white " style="font-size: 60px;">Lets Go HairStyless</h1>
+                                <button class="d-block text-white border border-2 border-white p-2 "
+                                    style="background-color: transparent;">Appoinment Here</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image: url('assets/images/slider2.jpg'); background-position: right; background-size: cover; padding: 250px 0;">
+                            <div class="banner-content d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-white">The Hair Fashion</h3>
+                                <h1 class="text-white " style="font-size: 60px;">Lets Go HairStyless</h1>
+                                <button class="d-block text-white border border-2 border-white p-2 "
+                                    style="background-color: transparent;">Appoinment Here</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Using Accordian  -->
+
+    <section class="FAQ my-5">
+        <div class="container">
+            <div class="row">
+                <div class="accordion bg-dark" id="accordionExample">
+                    <h2 class="text-white">FAQ</h2>
+                    <div class="accordion-item bg-dark">
+                      <h2 class="accordion-header ">
+                        <button class="accordion-button text-white" style="background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Question-1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-white">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, eligendi! Esse id quisquam harum repellendus quod dolore ducimus aliquid quas similique possimus qui ut asperiores reiciendis et sed nostrum voluptatibus repellat quo aperiam pariatur, error vitae quam! Quibusdam necessitatibus ea ut quas corporis facilis, repudiandae fugiat quis veritatis laborum harum.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-white" style="background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Question-2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-white">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, eligendi! Esse id quisquam harum repellendus quod dolore ducimus aliquid quas similique possimus qui ut asperiores reiciendis et sed nostrum voluptatibus repellat quo aperiam pariatur, error vitae quam! Quibusdam necessitatibus ea ut quas corporis facilis, repudiandae fugiat quis veritatis laborum harum.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item bg-dark">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-white" style="background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Question-3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-white">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, eligendi! Esse id quisquam harum repellendus quod dolore ducimus aliquid quas similique possimus qui ut asperiores reiciendis et sed nostrum voluptatibus repellat quo aperiam pariatur, error vitae quam! Quibusdam necessitatibus ea ut quas corporis facilis, repudiandae fugiat quis veritatis laborum harum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog using card -->
+     <section class="blog my-5">
+        <div class="container">
+            <div class="row">
+                <div class="title d-flex justify-content-center align-items-center">
+                    <h2 class="text-white fs-1">Our Blog</h2>
+                </div>
+                <div class="blog-card my-5 d-flex justify-content-center">
+                    <div class="card mx-3 border border-2 rounded-3" >
+                        <img src="assets/images/bl2.jpg" class="card-img-top" >
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title text-white">Nam auctor erat</h5>
+                          <p class="card-text text-white">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+                         
+                        </div>
+                    </div>
+                    <div class="card mx-3 border border-2 rounded-3" >
+                        <img src="assets/images/bl3.jpg" class="card-img-top" >
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title text-white">Fringilla non ex</h5>
+                          <p class="card-text text-white">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+                         
+                        </div>
+                    </div>
+                    <div class="card mx-3 border border-2 rounded-3" >
+                        <img src="assets/images/bl4.jpg" class="card-img-top" >
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title text-white">Donec tellus elit</h5>
+                          <p class="card-text text-white">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
